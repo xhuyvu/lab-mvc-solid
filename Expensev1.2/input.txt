@@ -1,0 +1,8 @@
+11-Apr-2009, 100, Tuition fee
+20-Apr-2009, 250, Rent house
+, 150, Missing date row
+30-Apr-2009, abc, Invalid number row
+01-May-2026, 500, Food
+02-May-2026, -50, Negative amount
+, , Empty row
+05-MAY-2026, 300, Dinner with friends

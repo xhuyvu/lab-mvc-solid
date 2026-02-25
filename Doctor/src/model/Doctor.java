@@ -1,0 +1,38 @@
+package model;
+
+public class Doctor {
+
+    private String code;
+    private String name;
+    private String specialization;
+    private int availability;
+
+    // constructor
+    public Doctor(String code, String name, String specialization, int availability) {
+        this.code = code;
+        this.name = name;
+        this.specialization = specialization;
+        this.availability = availability;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public int getAvailability() {
+        return availability;
+    }
+    
+    @Override
+    public String toString(){
+        return String.format("%-20s%-20s%-20s%-20d\n",code,name,specialization,availability);
+    }
+}
