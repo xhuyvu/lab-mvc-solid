@@ -20,12 +20,7 @@ public class DoctorService {
 
     // update doctor
     public boolean update(RequestDTO dto) {
-        // check code if exist
-        if (isDocotrExist(dto.getCode())) {
-            return repository.insert(dto);
-
-        }
-        return false;
+        return repository.update(dto);
     }
 
     // delete doctor

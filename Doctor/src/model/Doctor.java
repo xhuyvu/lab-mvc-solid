@@ -15,6 +15,22 @@ public class Doctor {
         this.availability = availability;
     }
 
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public void setAvailability(int availability) {
+        this.availability = availability;
+    }
+    
     public String getCode() {
         return code;
     }

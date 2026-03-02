@@ -30,4 +30,17 @@ public class DoctorRepository {
         return list.remove(doctor);
     }
 
+    // update
+    public boolean update(RequestDTO dto) {
+        for (Doctor d : list) {
+            if (d.getCode().equals(dto.getCode())) {
+                d.setName(dto.getName());
+                d.setSpecialization(dto.getSpecialization());
+                d.setAvailability(dto.getAvailability());
+                return true;
+            }
+
+        }
+        return false;
+    }
 }
